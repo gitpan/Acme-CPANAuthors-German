@@ -11,4 +11,4 @@ name: Acme-CPANAuthors-German
 requires:
   Acme::CPANAuthors: 0
   Acme::CPANAuthors::Austrian: 0
-version: 0.02
+version: 0.03

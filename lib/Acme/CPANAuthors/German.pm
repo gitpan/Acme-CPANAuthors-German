@@ -1,5 +1,5 @@
 package Acme::CPANAuthors::German;
-our $VERSION = '0.02';
+our $VERSION = '0.03';
 
 # ABSTRACT: We are German CPAN authors
 
@@ -18,6 +18,7 @@ use Acme::CPANAuthors::Register (
     HORNBURG => 'Stefan Hornburg',
     HORSHACK => 'Richard Lippmann',
     JSTENZEL => 'Jochen Stenzel',
+    MDOM     => 'Mario Domgörgen',
     MEMOWE   => 'Mirko Westermeier',
     MLEHMANN => 'Marc Lehmann',
     PHAYLON  => 'Robert \'phaylon\' Sedlacek',
@@ -49,7 +50,7 @@ Acme::CPANAuthors::German - We are German CPAN authors
 
 =head1 VERSION
 
-version 0.02
+version 0.03
 
 =head2 SYNOPSIS
 
