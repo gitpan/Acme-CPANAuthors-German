@@ -2,7 +2,7 @@
 abstract: 'We are German CPAN authors'
 author:
   - 'Florian Ragwitz <rafl@debian.org>'
-generated_by: 'Dist::Zilla::Plugin::MetaYAML version 1.092071'
+generated_by: 'Dist::Zilla::Plugin::MetaYAML version 1.092200'
 license: perl
 meta-spec:
   url: http://module-build.sourceforge.net/META-spec-v1.4.html
@@ -10,4 +10,5 @@ meta-spec:
 name: Acme-CPANAuthors-German
 requires:
   Acme::CPANAuthors: 0
-version: 0.01
+  Acme::CPANAuthors::Austrian: 0
+version: 0.02
