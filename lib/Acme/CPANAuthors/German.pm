@@ -1,18 +1,26 @@
 package Acme::CPANAuthors::German;
-our $VERSION = '0.03';
-
+BEGIN {
+  $Acme::CPANAuthors::German::AUTHORITY = 'cpan:FLORA';
+}
+BEGIN {
+  $Acme::CPANAuthors::German::VERSION = '0.04';
+}
 # ABSTRACT: We are German CPAN authors
 
 use strict;
 use warnings;
+use utf8;
 
 use Acme::CPANAuthors::Register (
     AGROLMS  => 'Achim Grolms',
     ANNO     => 'Anno Siegel',
     CFAERBER => 'Claus Färber',
     CORION   => 'Max Maischein',
+    DATA     => 'Danijel Tašov',
+    EIKEG    => 'Eike Grote',
     FANY     => 'Martin H. Sluka',
     FLORA    => 'Florian "rafl" Ragwitz',
+    GETTY    => 'Torsten Raudssus',
     GRICHTER => 'Gerald Richter',
     HOLLI    => 'Markus Holzer',
     HORNBURG => 'Stefan Hornburg',
@@ -23,6 +31,7 @@ use Acme::CPANAuthors::Register (
     MLEHMANN => 'Marc Lehmann',
     PHAYLON  => 'Robert \'phaylon\' Sedlacek',
     PLU      => 'Johannes Plunien',
+    RBO      => 'Robert Bohne',
     RENEEB   => 'Renee Baecker',
     SCHWIGON => 'Steffen "renormalist" Schwigon',
     SMUELLER => 'Steffen Müller',
@@ -41,16 +50,17 @@ use Acme::CPANAuthors::Register (
 1;
 
 __END__
-
 =pod
+
+=encoding utf-8
 
 =head1 NAME
 
 Acme::CPANAuthors::German - We are German CPAN authors
 
-=head1 VERSION
+=head1 DESCRIPTION
 
-version 0.03
+This class provides a hash of Pause ID/name of German CPAN authors.
 
 =head2 SYNOPSIS
 
@@ -65,10 +75,6 @@ version 0.03
     my $url      = $authors->avatar_url('SCHWIGON');
     my $kwalitee = $authors->kwalitee('WILLERT');
 
-=head1 DESCRIPTION
-
-This class provides a hash of Pause ID/name of German CPAN authors.
-
 =head1 MAINTENANCE
 
 If you are an Austrian CPAN author and are not listed here, please mail me. If
@@ -78,19 +84,16 @@ you are listed and don't want to be, mail me as well.
 
 L<Acme::CPANAuthors> - Main class to manipulate this one.
 
-
-
 =head1 AUTHOR
 
-  Florian Ragwitz <rafl@debian.org>
+Florian Ragwitz <rafl@debian.org>
 
 =head1 COPYRIGHT AND LICENSE
 
-This software is copyright (c) 2009 by Florian Ragwitz.
+This software is copyright (c) 2010 by Florian Ragwitz.
 
 This is free software; you can redistribute it and/or modify it under
 the same terms as the Perl 5 programming language system itself.
 
-=cut 
-
+=cut
 
